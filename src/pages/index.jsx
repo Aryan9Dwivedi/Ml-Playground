@@ -80,8 +80,9 @@ function PagesContent() {
 
 export default function Pages() {
     return (
-        <Router>
-            <PagesContent />
+        <Router basename={import.meta.env.BASE_URL}>
+        <PagesContent />
         </Router>
+
     );
 }
